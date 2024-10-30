@@ -1,0 +1,27 @@
+Context:
+
+Database: learn_db
+Schema: raw
+Table Name:
+    1. product
+    2. customer
+    3. sales
+
+
+Exercise:
+
+Total sales = quantity * price_per_unit
+Answers can be derived using WHERE and IN sql commands, but use JOIN sql command for this exercise
+
+1. What is the total sales amount in system? (output value in decimal)
+2. what is the total sales amount for the customers available in system? (output value in decimal)
+3. what is the total sales amount for the customers not available in system? (output value in decimal)
+4. what is the total sales amount for the products available in system? (output value in decimal)
+5. what is the total sales amount for the products not available in system? (output value in decimal)
+6. What are the customer IDs in sales data that are not available in customer master data?
+7. What are the Product IDs in sales data that are not available in product master data?
+8. How many apples are sold?
+9. How many apples did John cena buy?
+10. How many fruits did Randy Orton buy?
+11. How many active customers have bought apple and paper?
+12. How much amount has been spent by active customer on pencil and Bannana?
