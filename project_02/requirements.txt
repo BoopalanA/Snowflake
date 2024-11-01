@@ -1,0 +1,38 @@
+A retail comapany is generating transaction data of its sales in its local system.
+Since more data is getting generated, the comapny decided to move its data to cloud infrastructure to handle infinite data
+The company has one Azure account and one snowflake account.
+
+Azure Requirements:
+===================
+
+1. Transaction data will be loaded to ADLS container "transaction"
+   Data files will be loaded in container in a directory like "/YYYY/MM/DD/"
+2. Master data files will be loaded to ADLS container "master"
+   Data files will be loaded in container in a directory like "/YYYY/MM/DD/"
+3. Data files may come in 2 formats, namely CSV and TSV
+
+ADLS containers will be available in below resource
+    Resource-Group: learn-snowflake
+    Storage-Account: learnsnowflakesa
+  
+Snowflake Requirement:
+======================
+
+1. Create Snowpipe for continuous loading data files from ADLS into Snowflake tables
+2. Create 2 new tables in RAW schema. Table names are "TRANSACTION" and "MASTER"
+   Tables should have all the columns from data files and also a column show file names
+3. Load all files in "transaction" container to table "TRANSACTION"
+4. Load all files in "master" container to table "MASTER"
+5. Create 2 external stages each poiting to 2 containers
+6. Create PIPE object and necessary FILE FORMATS
+
+Use below resources available in Snowflake account:
+
+1. Storage Integration: AZURE_STORAGE_INTEGRATION
+2. Notification Integration: AZURE_EVENT_NOTIFICATION
+
+
+Final Output:
+=============
+
+1. Create a view in INTEGRATION schema called "SALES_REPORT" to show total sales by each product
