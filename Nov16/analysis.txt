@@ -1,0 +1,11 @@
+1. How many unique customers and suppliers are there?
+2. How many parts are available with each manufacturer?
+3. Which manufacturer has highest number of parts?
+4. What are the bands that have lowest number of parts?
+5. For the parts whose size are 25, which maufacturer is creating the highest number of parts?
+6. Do we have a Indian customer with negative account balance? (Yes/No)
+7. Customers phone number are in format "xx-yyy-zzz-aa", show the output in format "xxaa"
+8. Customers phone number are in format "xx-yyy-zzz-aa", show the output in format "zzz-yyy"
+9. How many parts had been shipped in year 1992?
+10. who are the customers and suppliers from nation Russia?
+11. Name and address of the customers who have bought parts worth less than a million?
