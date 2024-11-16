@@ -5,14 +5,14 @@ Suppliers are the people/company who sell products to customers
 What does ORGANISER do?
 ======================
 
-1. All the sales data are loaded to cloud storage container at a regular interval
+1. They will upload data files to cloud storage container at a regular interval
 2. The files are mostly deleimted files(csv, tsv)
 
-What data to expect?
-=====================
+What data to expect in cloud storage?
+=====================================
 
-CUSTOMER: Details of the people/comapny who are buying products
-SUPPLIER: Details of the people/comapny who are selling products
+CUSTOMER: Details of the people/company who are buying products
+SUPPLIER: Details of the people/company who are selling products
 PARTS   : Details of the products wwhich are bought by customers
 LINE_ITEM: Details of sales hapenning between suppliers and customers
 
