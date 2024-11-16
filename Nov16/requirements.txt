@@ -1,0 +1,34 @@
+A company called ORGANISER is managing a business. Motive of the business is to manage and organize data of its clients(i.e, suppliers and customers).
+Customers are the people/company who buy products from the suppliers
+Suppliers are the people/company who sell products to customers
+
+What does ORGANISER do?
+======================
+
+1. All the sales data are loaded to cloud storage container at a regular interval
+2. The files are mostly deleimted files(csv, tsv)
+
+What data to expect?
+=====================
+
+CUSTOMER: Details of the people/comapny who are buying products
+SUPPLIER: Details of the people/comapny who are selling products
+PARTS   : Details of the products wwhich are bought by customers
+LINE_ITEM: Details of sales hapenning between suppliers and customers
+
+Where are the data uploaded?
+============================
+
+Data will be uploaded in Azure Data Lake Storage(ADLS) in path format /YYYY/MM/DD/
+Details:
+Resource Group: learn-snowflake
+Storage Account: learnsnowflakesa
+Container: organiser
+
+What is expected from Snowflake developer
+=========================================
+
+1. To Create new database called "ORGANISER"
+2. To create a schema to store raw data
+3. To Create a schema to store processed data
+4. Data should be refreshed in processed layer tables every 10mins
