@@ -32,3 +32,5 @@ What is expected from Snowflake developer
 2. To create a schema to store raw data
 3. To Create a schema to store processed data
 4. Data should be refreshed in processed layer tables every 10mins
+
+Storage Integration: azure_storage_integration
