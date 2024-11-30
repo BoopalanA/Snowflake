@@ -1,20 +1,35 @@
-Raw layer tables:
+/**********************************************************************************************************
+###########################################################################################################
+                                                RAW LAYER TABLES
+###########################################################################################################
+***********************************************************************************************************/
 1. raw_part
-  ● raw_part_id
+  ● raw_part_key
   ● part_name
   ● part_manufacturer
   ● part_brand
   ● source_file_name
   ● created_timestamp
+raw_part_key is an autoincrement column
+Add primary key constaint to raw_part_key
+Add default timestamp to created_timestamp
 
 2. raw_customer
-  ● raw_customer_id
+  ● raw_customer_key
   ● customer_name
   ● customer_address
   ● customer_phone_number
   ● source_file_name
   ● created_timestamp
------------------------------------------
+raw_customer_key is an autoincrement column
+Add primary key constaint to raw_customer_key
+Add default timestamp to created_timestamp
+
+/**********************************************************************************************************
+###########################################################################################################
+                                          PROCESSED LAYER TABLES
+###########################################################################################################
+***********************************************************************************************************/
 Processed layer tables:
 1. dim_customer
   ● customer_key
@@ -23,17 +38,19 @@ Processed layer tables:
   ● phone_number
   ● source_file_name
   ● created_timestamp
+customer_key is an autoincrement column
 Add primary key constaint to customer_key
 Add unique constarint to name
 Add default timestamp to created_timestamp
 
-1. dim_part
+2. dim_part
   ● part_key
   ● name
   ● manufacturer
   ● brand
   ● source_file_name
   ● created_timestamp
+part_key is an autoincrement column
 Add primary key constaint to part_key
 Add unique constarint to (name,manufacturer)
 Add default timestamp to created_timestamp
