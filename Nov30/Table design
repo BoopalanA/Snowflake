@@ -1,0 +1,39 @@
+Raw layer tables:
+1. raw_part
+  ● raw_part_id
+  ● part_name
+  ● part_manufacturer
+  ● part_brand
+  ● source_file_name
+  ● created_timestamp
+
+2. raw_customer
+  ● raw_customer_id
+  ● customer_name
+  ● customer_address
+  ● customer_phone_number
+  ● source_file_name
+  ● created_timestamp
+-----------------------------------------
+Processed layer tables:
+1. dim_customer
+  ● customer_key
+  ● name
+  ● address
+  ● phone_number
+  ● source_file_name
+  ● created_timestamp
+Add primary key constaint to customer_key
+Add unique constarint to name
+Add default timestamp to created_timestamp
+
+1. dim_part
+  ● part_key
+  ● name
+  ● manufacturer
+  ● brand
+  ● source_file_name
+  ● created_timestamp
+Add primary key constaint to part_key
+Add unique constarint to (name,manufacturer)
+Add default timestamp to created_timestamp
