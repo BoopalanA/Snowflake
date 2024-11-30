@@ -1,0 +1,18 @@
+Design a data warehouse in Snowflake for below datasets available in Azure storage container
+1. Customer
+2. Part
+
+Dataset details
+1. Customer: A customer is uniquely identified using "customer_name"
+2. Part: A part is uniquely identified using "part_name", "part_manufacturer"
+
+Azure storage details
+1. Resource group: learn-snowflake
+2. Resource name: learnsnowflakesa
+
+Snowflake details
+1. Storage integration: azure_storage_integration
+
+Expectations from developer:
+1. Create database, schema, external stage, table, stream, stored procedure, task
+2. Dataset might have duplicate data inside them, you're expected to clean data and load proper data in final data warehouses tables
